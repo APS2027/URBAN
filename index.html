@@ -40,7 +40,7 @@
     <!-- Hero / Intro -->
     <div class="text-center mb-12">
       <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-3">Plataforma de Capacitación Profesional</h2>
-      <p class="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">Realizá el pago, desbloqueá tu material de Google Drive, estudiá y rendí el examen de 10 preguntas para obtener tu certificación oficial.</p>
+      <p class="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">Realizá el pago, desbloqueá tu material de Google Drive, estudialo y recién ahí se habilitará el examen técnico para obtener tu certificación oficial.</p>
     </div>
 
     <!-- Grid de Cursos -->
@@ -61,17 +61,17 @@
           </ul>
         </div>
         <div class="p-5 bg-gray-800/50 border-t border-gray-700/50 space-y-3">
-          <!-- Botón de Pago Individual ($15.000) -->
-          <a href="https://mercadopago.com.ar" target="_blank" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
+          <!-- Botón de Pago Individual ($15.000) - Cambiar link si tenés el específico -->
+          <a href="https://mpago.la/29M1WVi" target="_blank" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
             <i class="fa-solid fa-cart-shopping"></i> Pagar Curso ($15.000)
           </a>
           <!-- Botón Drive Bloqueado con Candado -->
           <button disabled class="w-full bg-gray-700 text-gray-400 font-semibold py-2.5 px-3 rounded-lg text-xs flex items-center justify-center gap-2 cursor-not-allowed border border-gray-600" id="btn-drive-1">
             <i class="fa-solid fa-lock text-amber-400"></i> Drive Bloqueado (Completar Pago)
           </button>
-          <!-- Botón de Examen -->
-          <button onclick="abrirExamen('Curso de Marketing Inicial para Principiantes', ['https://drive.google.com/drive/folders/1wZ2I7XsNtCbplxqhyzNM39AHgoM86iCG?usp=sharing'])" class="w-full bg-gray-700 hover:bg-gray-600 text-indigo-300 font-semibold py-2 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 border border-indigo-500/30">
-            <i class="fa-solid fa-file-pen"></i> Ir al Examen (Tras Estudiar)
+          <!-- Botón de Examen Bloqueado hasta Estudiar -->
+          <button disabled class="w-full bg-gray-700 text-gray-500 font-semibold py-2 px-3 rounded-lg text-xs flex items-center justify-center gap-2 cursor-not-allowed border border-gray-700" id="btn-exam-1">
+            <i class="fa-solid fa-lock text-gray-500"></i> Examen Bloqueado (Estudiar Drive Primero)
           </button>
         </div>
       </div>
@@ -91,14 +91,14 @@
           </ul>
         </div>
         <div class="p-5 bg-gray-800/50 border-t border-gray-700/50 space-y-3">
-          <a href="https://mercadopago.com.ar" target="_blank" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
+          <a href="https://mpago.la/29M1WVi" target="_blank" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
             <i class="fa-solid fa-cart-shopping"></i> Pagar Curso ($15.000)
           </a>
           <button disabled class="w-full bg-gray-700 text-gray-400 font-semibold py-2.5 px-3 rounded-lg text-xs flex items-center justify-center gap-2 cursor-not-allowed border border-gray-600" id="btn-drive-2">
             <i class="fa-solid fa-lock text-amber-400"></i> Drive Bloqueado (Completar Pago)
           </button>
-          <button onclick="abrirExamen('Curso de Administración de Consorcios', ['https://drive.google.com/drive/folders/1iCwOfjGjEex8JD8Bmg7HssBzH5YkK-Pn?usp=sharing'])" class="w-full bg-gray-700 hover:bg-gray-600 text-blue-300 font-semibold py-2 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 border border-blue-500/30">
-            <i class="fa-solid fa-file-pen"></i> Ir al Examen (Tras Estudiar)
+          <button disabled class="w-full bg-gray-700 text-gray-500 font-semibold py-2 px-3 rounded-lg text-xs flex items-center justify-center gap-2 cursor-not-allowed border border-gray-700" id="btn-exam-2">
+            <i class="fa-solid fa-lock text-gray-500"></i> Examen Bloqueado (Estudiar Drive Primero)
           </button>
         </div>
       </div>
@@ -118,14 +118,14 @@
           </ul>
         </div>
         <div class="p-5 bg-gray-800/50 border-t border-gray-700/50 space-y-3">
-          <a href="https://mercadopago.com.ar" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
+          <a href="https://mpago.la/29M1WVi" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
             <i class="fa-solid fa-cart-shopping"></i> Pagar Curso ($15.000)
           </a>
           <button disabled class="w-full bg-gray-700 text-gray-400 font-semibold py-2.5 px-3 rounded-lg text-xs flex items-center justify-center gap-2 cursor-not-allowed border border-gray-600" id="btn-drive-3">
             <i class="fa-solid fa-lock text-amber-400"></i> Drive Bloqueado (Completar Pago)
           </button>
-          <button onclick="abrirExamen('Curso de Reparación de Línea Blanca', ['https://drive.google.com/drive/folders/1htl8osu4monqyunIGDrtooYaNf8TGpbu?usp=sharing'])" class="w-full bg-gray-700 hover:bg-gray-600 text-emerald-300 font-semibold py-2 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 border border-emerald-500/30">
-            <i class="fa-solid fa-file-pen"></i> Ir al Examen (Tras Estudiar)
+          <button disabled class="w-full bg-gray-700 text-gray-500 font-semibold py-2 px-3 rounded-lg text-xs flex items-center justify-center gap-2 cursor-not-allowed border border-gray-700" id="btn-exam-3">
+            <i class="fa-solid fa-lock text-gray-500"></i> Examen Bloqueado (Estudiar Drive Primero)
           </button>
         </div>
       </div>
@@ -154,16 +154,16 @@
           <button disabled class="w-full bg-gray-700 text-gray-400 font-semibold py-2.5 px-3 rounded-lg text-xs flex items-center justify-center gap-2 cursor-not-allowed border border-gray-600" id="btn-drive-pack">
             <i class="fa-solid fa-lock text-amber-400"></i> Drives Bloqueados (Completar Pago)
           </button>
-          <!-- Botón de Examen Pack -->
-          <button onclick="abrirExamen('Pack Completo - 3 Cursos', ['https://drive.google.com/drive/folders/1wZ2I7XsNtCbplxqhyzNM39AHgoM86iCG?usp=sharing', 'https://drive.google.com/drive/folders/1iCwOfjGjEex8JD8Bmg7HssBzH5YkK-Pn?usp=sharing', 'https://drive.google.com/drive/folders/1htl8osu4monqyunIGDrtooYaNf8TGpbu?usp=sharing'])" class="w-full bg-gray-700 hover:bg-gray-600 text-amber-300 font-semibold py-2 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 border border-amber-500/30">
-            <i class="fa-solid fa-file-pen"></i> Ir a Exámenes (Tras Estudiar)
+          <!-- Botón de Examen Pack Bloqueado -->
+          <button disabled class="w-full bg-gray-700 text-gray-500 font-semibold py-2 px-3 rounded-lg text-xs flex items-center justify-center gap-2 cursor-not-allowed border border-gray-700" id="btn-exam-pack">
+            <i class="fa-solid fa-lock text-gray-500"></i> Exámenes Bloqueados (Estudiar Drive Primero)
           </button>
         </div>
       </div>
 
     </div>
 
-    <!-- Panel de Examen (Oculto hasta hacer clic en Ir al Examen) -->
+    <!-- Panel de Examen (Oculto hasta hacer clic en Ir al Examen una vez estudiado) -->
     <div id="classroom-section" class="hidden bg-gray-800 border border-gray-700 rounded-2xl p-6 md:p-8 mb-12">
       <div class="border-b border-gray-700 pb-4 mb-6">
         <span class="text-xs text-green-400 font-semibold uppercase tracking-wider">Panel de Evaluación Técnica</span>
@@ -338,22 +338,34 @@
 
   <script>
     let cursoActual = '';
-    let linksDriveActuales = [];
 
-    function desbloquearDrive(idBtnDrive, links) {
-      const btn = document.getElementById(idBtnDrive);
-      if(!btn) return;
-      btn.disabled = false;
-      btn.className = "w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg";
-      
-      if (links.length === 1) {
-        btn.innerHTML = `<i class="fa-solid fa-cloud-arrow-down"></i> Acceder a Materiales (Drive)`;
-        btn.onclick = function() { window.open(links[0], '_blank'); };
-      } else {
-        btn.innerHTML = `<i class="fa-solid fa-cloud-arrow-down"></i> Acceder a los 3 Drives`;
-        btn.onclick = function() {
-          links.forEach(l => window.open(l, '_blank'));
-        };
+    function desbloquearCursoYDrive(num, titulo, links) {
+      // 1. Desbloquear botón de Drive
+      const btnDrive = document.getElementById(`btn-drive-${num}`);
+      if(btnDrive) {
+        btnDrive.disabled = false;
+        btnDrive.className = "w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg";
+        if (links.length === 1) {
+          btnDrive.innerHTML = `<i class="fa-solid fa-cloud-arrow-down"></i> Descargar Materiales (Drive)`;
+          btnDrive.onclick = function() { window.open(links[0], '_blank'); habilitarExamen(num, titulo); };
+        } else {
+          btnDrive.innerHTML = `<i class="fa-solid fa-cloud-arrow-down"></i> Descargar los 3 Drives`;
+          btnDrive.onclick = function() {
+            links.forEach(l => window.open(l, '_blank'));
+            habilitarExamen(num, titulo);
+          };
+        }
+      }
+    }
+
+    function habilitarExamen(num, titulo) {
+      // Al hacer clic en descargar Drive, se habilita el botón de examen correspondiente
+      const btnExam = document.getElementById(`btn-exam-${num}`);
+      if(btnExam) {
+        btnExam.disabled = false;
+        btnExam.className = "w-full bg-green-600 hover:bg-green-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg";
+        btnExam.innerHTML = `<i class="fa-solid fa-file-pen"></i> Ir al Examen Técnico (10 Preguntas)`;
+        btnExam.onclick = function() { abrirExamen(titulo); };
       }
     }
 
@@ -361,17 +373,16 @@
     window.onload = function() {
       const urlParams = new URLSearchParams(window.location.search);
       if (urlParams.get('pago') === 'ok' || window.location.href.includes('ok')) {
-        desbloquearDrive('btn-drive-1', ['https://drive.google.com/drive/folders/1wZ2I7XsNtCbplxqhyzNM39AHgoM86iCG?usp=sharing']);
-        desbloquearDrive('btn-drive-2', ['https://drive.google.com/drive/folders/1iCwOfjGjEex8JD8Bmg7HssBzH5YkK-Pn?usp=sharing']);
-        desbloquearDrive('btn-drive-3', ['https://drive.google.com/drive/folders/1htl8osu4monqyunIGDrtooYaNf8TGpbu?usp=sharing']);
-        desbloquearDrive('btn-drive-pack', ['https://drive.google.com/drive/folders/1wZ2I7XsNtCbplxqhyzNM39AHgoM86iCG?usp=sharing', 'https://drive.google.com/drive/folders/1iCwOfjGjEex8JD8Bmg7HssBzH5YkK-Pn?usp=sharing', 'https://drive.google.com/drive/folders/1htl8osu4monqyunIGDrtooYaNf8TGpbu?usp=sharing']);
-        alert("¡Pago acreditado con éxito! Se han desbloqueado los accesos a Google Drive correspondientes.");
+        desbloquearCursoYDrive(1, 'Curso de Marketing Inicial para Principiantes', ['https://drive.google.com/drive/folders/1wZ2I7XsNtCbplxqhyzNM39AHgoM86iCG?usp=sharing']);
+        desbloquearCursoYDrive(2, 'Curso de Administración de Consorcios', ['https://drive.google.com/drive/folders/1iCwOfjGjEex8JD8Bmg7HssBzH5YkK-Pn?usp=sharing']);
+        desbloquearCursoYDrive(3, 'Curso de Reparación de Línea Blanca', ['https://drive.google.com/drive/folders/1htl8osu4monqyunIGDrtooYaNf8TGpbu?usp=sharing']);
+        desbloquearCursoYDrive('pack', 'Pack Completo - 3 Cursos', ['https://drive.google.com/drive/folders/1wZ2I7XsNtCbplxqhyzNM39AHgoM86iCG?usp=sharing', 'https://drive.google.com/drive/folders/1iCwOfjGjEex8JD8Bmg7HssBzH5YkK-Pn?usp=sharing', 'https://drive.google.com/drive/folders/1htl8osu4monqyunIGDrtooYaNf8TGpbu?usp=sharing']);
+        alert("¡Pago acreditado con éxito! Se han habilitado los materiales de Google Drive para descarga y estudio.");
       }
     };
 
-    function abrirExamen(titulo, links) {
+    function abrirExamen(titulo) {
       cursoActual = titulo;
-      linksDriveActuales = links;
       document.getElementById('current-course-title').innerText = titulo;
       document.getElementById('classroom-section').classList.remove('hidden');
       document.getElementById('classroom-section').scrollIntoView({ behavior: 'smooth' });

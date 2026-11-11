@@ -61,8 +61,8 @@
           </ul>
         </div>
         <div class="p-5 bg-gray-800/50 border-t border-gray-700/50 space-y-3">
-          <!-- Botón de Pago Individual ($15.000) - Cambiar link si tenés el específico -->
-          <a href="https://mpago.la/29M1WVi" target="_blank" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
+          <!-- Botón de Pago Individual ($15.000 real) -->
+          <a href="https://mpago.la/2L712UT" target="_blank" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
             <i class="fa-solid fa-cart-shopping"></i> Pagar Curso ($15.000)
           </a>
           <!-- Botón Drive Bloqueado con Candado -->
@@ -91,7 +91,8 @@
           </ul>
         </div>
         <div class="p-5 bg-gray-800/50 border-t border-gray-700/50 space-y-3">
-          <a href="https://mpago.la/29M1WVi" target="_blank" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
+          <!-- Botón de Pago Individual ($15.000 real) -->
+          <a href="https://mpago.la/2L712UT" target="_blank" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
             <i class="fa-solid fa-cart-shopping"></i> Pagar Curso ($15.000)
           </a>
           <button disabled class="w-full bg-gray-700 text-gray-400 font-semibold py-2.5 px-3 rounded-lg text-xs flex items-center justify-center gap-2 cursor-not-allowed border border-gray-600" id="btn-drive-2">
@@ -118,7 +119,8 @@
           </ul>
         </div>
         <div class="p-5 bg-gray-800/50 border-t border-gray-700/50 space-y-3">
-          <a href="https://mpago.la/29M1WVi" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
+          <!-- Botón de Pago Individual ($15.000 real) -->
+          <a href="https://mpago.la/2L712UT" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
             <i class="fa-solid fa-cart-shopping"></i> Pagar Curso ($15.000)
           </a>
           <button disabled class="w-full bg-gray-700 text-gray-400 font-semibold py-2.5 px-3 rounded-lg text-xs flex items-center justify-center gap-2 cursor-not-allowed border border-gray-600" id="btn-drive-3">
@@ -340,7 +342,6 @@
     let cursoActual = '';
 
     function desbloquearCursoYDrive(num, titulo, links) {
-      // 1. Desbloquear botón de Drive
       const btnDrive = document.getElementById(`btn-drive-${num}`);
       if(btnDrive) {
         btnDrive.disabled = false;
@@ -359,7 +360,6 @@
     }
 
     function habilitarExamen(num, titulo) {
-      // Al hacer clic en descargar Drive, se habilita el botón de examen correspondiente
       const btnExam = document.getElementById(`btn-exam-${num}`);
       if(btnExam) {
         btnExam.disabled = false;
@@ -369,7 +369,6 @@
       }
     }
 
-    // Detecta automáticamente si vuelve del pago exitoso con ?pago=ok
     window.onload = function() {
       const urlParams = new URLSearchParams(window.location.search);
       if (urlParams.get('pago') === 'ok' || window.location.href.includes('ok')) {

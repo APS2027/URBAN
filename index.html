@@ -61,7 +61,7 @@
           </ul>
         </div>
         <div class="p-5 bg-gray-800/50 border-t border-gray-700/50 space-y-3">
-          <!-- Botón de Pago -->
+          <!-- Botón de Pago Individual ($15.000) -->
           <a href="https://mercadopago.com.ar" target="_blank" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
             <i class="fa-solid fa-cart-shopping"></i> Pagar Curso ($15.000)
           </a>
@@ -130,7 +130,7 @@
         </div>
       </div>
 
-      <!-- Pack Completo -->
+      <!-- Pack Completo ($35.000 con link real) -->
       <div class="bg-gradient-to-b from-indigo-900/40 to-gray-800 rounded-xl border-2 border-indigo-500 overflow-hidden flex flex-col justify-between relative">
         <div class="absolute top-0 right-0 bg-indigo-500 text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">¡Oferta 3x1!</div>
         <div class="p-6">
@@ -146,12 +146,15 @@
           </ul>
         </div>
         <div class="p-5 bg-indigo-950/50 border-t border-indigo-500/30 space-y-3">
-          <a href="https://mercadopago.com.ar" target="_blank" class="w-full bg-amber-500 hover:bg-amber-400 text-gray-950 font-bold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
+          <!-- Botón de Pago Real de $35.000 -->
+          <a href="https://mpago.la/29M1WVi" target="_blank" class="w-full bg-amber-500 hover:bg-amber-400 text-gray-950 font-bold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
             <i class="fa-solid fa-star"></i> Pagar Pack ($35.000)
           </a>
+          <!-- Botón Drive Pack Bloqueado con Candado -->
           <button disabled class="w-full bg-gray-700 text-gray-400 font-semibold py-2.5 px-3 rounded-lg text-xs flex items-center justify-center gap-2 cursor-not-allowed border border-gray-600" id="btn-drive-pack">
             <i class="fa-solid fa-lock text-amber-400"></i> Drives Bloqueados (Completar Pago)
           </button>
+          <!-- Botón de Examen Pack -->
           <button onclick="abrirExamen('Pack Completo - 3 Cursos', ['https://drive.google.com/drive/folders/1wZ2I7XsNtCbplxqhyzNM39AHgoM86iCG?usp=sharing', 'https://drive.google.com/drive/folders/1iCwOfjGjEex8JD8Bmg7HssBzH5YkK-Pn?usp=sharing', 'https://drive.google.com/drive/folders/1htl8osu4monqyunIGDrtooYaNf8TGpbu?usp=sharing'])" class="w-full bg-gray-700 hover:bg-gray-600 text-amber-300 font-semibold py-2 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 border border-amber-500/30">
             <i class="fa-solid fa-file-pen"></i> Ir a Exámenes (Tras Estudiar)
           </button>
@@ -337,11 +340,9 @@
     let cursoActual = '';
     let linksDriveActuales = [];
 
-    // Al recargar o volver desde Mercado Pago con éxito, simulamos/detectamos el pago aprobado
-    // O podés usar este botón auxiliar para testear el desbloqueo del Drive con candado:
-    // (Ej: Si querés probar cómo se destraba el candado al volver del pago, ejecutá simularPagoExitoso() en consola o agregalo a un botón de prueba).
     function desbloquearDrive(idBtnDrive, links) {
       const btn = document.getElementById(idBtnDrive);
+      if(!btn) return;
       btn.disabled = false;
       btn.className = "w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg";
       
@@ -349,16 +350,14 @@
         btn.innerHTML = `<i class="fa-solid fa-cloud-arrow-down"></i> Acceder a Materiales (Drive)`;
         btn.onclick = function() { window.open(links[0], '_blank'); };
       } else {
-        // Si es el pack, abrimos el primer link o generamos opciones
         btn.innerHTML = `<i class="fa-solid fa-cloud-arrow-down"></i> Acceder a los 3 Drives`;
         btn.onclick = function() {
           links.forEach(l => window.open(l, '_blank'));
         };
       }
-      alert("¡Pago acreditado con éxito! Se ha desbloqueado el acceso a tu material en Google Drive.");
     }
 
-    // Nota: Para simular el desbloqueo instantáneo de prueba ahora mismo en la web, podés hacer clic en cualquiera de los botones de pago o configurar el retorno de Mercado Pago a https://aps2027.github.io/URBAN/?pago=ok
+    // Detecta automáticamente si vuelve del pago exitoso con ?pago=ok
     window.onload = function() {
       const urlParams = new URLSearchParams(window.location.search);
       if (urlParams.get('pago') === 'ok' || window.location.href.includes('ok')) {
@@ -366,6 +365,7 @@
         desbloquearDrive('btn-drive-2', ['https://drive.google.com/drive/folders/1iCwOfjGjEex8JD8Bmg7HssBzH5YkK-Pn?usp=sharing']);
         desbloquearDrive('btn-drive-3', ['https://drive.google.com/drive/folders/1htl8osu4monqyunIGDrtooYaNf8TGpbu?usp=sharing']);
         desbloquearDrive('btn-drive-pack', ['https://drive.google.com/drive/folders/1wZ2I7XsNtCbplxqhyzNM39AHgoM86iCG?usp=sharing', 'https://drive.google.com/drive/folders/1iCwOfjGjEex8JD8Bmg7HssBzH5YkK-Pn?usp=sharing', 'https://drive.google.com/drive/folders/1htl8osu4monqyunIGDrtooYaNf8TGpbu?usp=sharing']);
+        alert("¡Pago acreditado con éxito! Se han desbloqueado los accesos a Google Drive correspondientes.");
       }
     };
 

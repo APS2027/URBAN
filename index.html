@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Urban Academy | Cursos Profesionales</title>
+  <title>Urban Academy | Plataforma Educativa Oficial</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <style>
@@ -23,7 +23,7 @@
         <i class="fa-solid fa-graduation-cap text-indigo-500 text-3xl"></i>
         <div>
           <h1 class="text-xl font-bold tracking-wide text-white">URBAN ACADEMY</h1>
-          <p class="text-xs text-gray-400">Formación Técnica & Negocios Digitales</p>
+          <p class="text-xs text-gray-400">Formación Profesional & Certificación Oficial</p>
         </div>
       </div>
       <div class="flex items-center gap-6 text-sm text-gray-300">
@@ -40,31 +40,30 @@
     <!-- Hero / Intro -->
     <div class="text-center mb-12">
       <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-3">Plataforma de Capacitación Profesional</h2>
-      <p class="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">Accedé a tus cursos, rendí tu examen de certificación y descargá tu diploma oficial al instante. Proceso 100% automatizado.</p>
+      <p class="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">Seleccioná tu formación, realizá el pago seguro, aprobá la evaluación técnica de 10 preguntas y obtené tu certificación junto al acceso al material en Google Drive.</p>
     </div>
 
     <!-- Grid de Cursos -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
       
       <!-- Curso 1 -->
       <div class="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden flex flex-col justify-between">
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
-            <span class="bg-indigo-500/10 text-indigo-400 text-xs font-semibold px-2.5 py-1 rounded-full border border-indigo-500/20">Marketing & Ventas</span>
-            <span class="text-2xl font-bold text-white">$15.000 <span class="text-xs font-normal text-gray-400">ARS</span></span>
+            <span class="bg-indigo-500/10 text-indigo-400 text-xs font-semibold px-2.5 py-1 rounded-full border border-indigo-500/20">Marketing</span>
+            <span class="text-xl font-bold text-white">$15.000 <span class="text-xs font-normal text-gray-400">ARS</span></span>
           </div>
-          <h3 class="text-xl font-bold text-white mb-2">Curso de Marketing Inicial para Principiantes</h3>
-          <p class="text-gray-400 text-sm mb-4">Aprendé finanzas básicas, costos, estructura de precios reales, auditoría de redes, publicidad en Meta Ads y scripts de venta directos.</p>
+          <h3 class="text-lg font-bold text-white mb-2">Curso de Marketing Inicial</h3>
+          <p class="text-gray-400 text-xs mb-4">Finanzas, costos, estructura de precios reales, auditoría de redes y campañas.</p>
           <ul class="text-xs text-gray-300 space-y-2 mb-6">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Incluye material y guías en PDF</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Examen y Certificación Oficial</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Descarga Digital Inmediata</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Materiales Drive</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Examen de 10 Preguntas</li>
           </ul>
         </div>
-        <div class="p-6 bg-gray-800/50 border-t border-gray-700/50">
-          <button onclick="simularPago('Curso de Marketing Inicial para Principiantes', 'https://drive.google.com/drive/folders/1wZ2I7XsNtCbplxqhyzNM39AHgoM86iCG?usp=sharing')" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 px-4 rounded-lg transition-all flex items-center justify-center gap-2 shadow-lg shadow-indigo-600/20">
-            <i class="fa-solid fa-cart-shopping"></i> Comprar e Iniciar ($15.000)
-          </button>
+        <div class="p-5 bg-gray-800/50 border-t border-gray-700/50">
+          <a href="https://mercadopago.com.ar" target="_blank" onclick="iniciarFlujo('Curso de Marketing Inicial para Principiantes', 'https://drive.google.com/drive/folders/1wZ2I7XsNtCbplxqhyzNM39AHgoM86iCG?usp=sharing')" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
+            <i class="fa-solid fa-cart-shopping"></i> Comprar ($15.000)
+          </a>
         </div>
       </div>
 
@@ -72,21 +71,20 @@
       <div class="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden flex flex-col justify-between">
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
-            <span class="bg-blue-500/10 text-blue-400 text-xs font-semibold px-2.5 py-1 rounded-full border border-blue-500/20">Gestión Operativa</span>
-            <span class="text-2xl font-bold text-white">$15.000 <span class="text-xs font-normal text-gray-400">ARS</span></span>
+            <span class="bg-blue-500/10 text-blue-400 text-xs font-semibold px-2.5 py-1 rounded-full border border-blue-500/20">Gestión</span>
+            <span class="text-xl font-bold text-white">$15.000 <span class="text-xs font-normal text-gray-400">ARS</span></span>
           </div>
-          <h3 class="text-xl font-bold text-white mb-2">Curso de Administración de Consorcios</h3>
-          <p class="text-gray-400 text-sm mb-4">Capacitación integral en gestión legal, liquidación de expensas, control financiero y mantenimiento operativo de copropiedades.</p>
+          <h3 class="text-lg font-bold text-white mb-2">Administración de Consorcios</h3>
+          <p class="text-gray-400 text-xs mb-4">Gestión legal, liquidación de expensas y control financiero operativo.</p>
           <ul class="text-xs text-gray-300 space-y-2 mb-6">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Manual Completo de Operación</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Examen y Certificación Oficial</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Modelos y Plantillas de Trabajo</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Materiales Drive</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Examen de 10 Preguntas</li>
           </ul>
         </div>
-        <div class="p-6 bg-gray-800/50 border-t border-gray-700/50">
-          <button onclick="simularPago('Curso de Administración de Consorcios', 'https://drive.google.com/drive/folders/1iCwOfjGjEex8JD8Bmg7HssBzH5YkK-Pn?usp=sharing')" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-4 rounded-lg transition-all flex items-center justify-center gap-2 shadow-lg shadow-blue-600/20">
-            <i class="fa-solid fa-cart-shopping"></i> Comprar e Iniciar ($15.000)
-          </button>
+        <div class="p-5 bg-gray-800/50 border-t border-gray-700/50">
+          <a href="https://mercadopago.com.ar" target="_blank" onclick="iniciarFlujo('Curso de Administración de Consorcios', 'https://drive.google.com/drive/folders/1iCwOfjGjEex8JD8Bmg7HssBzH5YkK-Pn?usp=sharing')" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
+            <i class="fa-solid fa-cart-shopping"></i> Comprar ($15.000)
+          </a>
         </div>
       </div>
 
@@ -94,92 +92,195 @@
       <div class="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden flex flex-col justify-between">
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
-            <span class="bg-emerald-500/10 text-emerald-400 text-xs font-semibold px-2.5 py-1 rounded-full border border-emerald-500/20">Oficios Técnicos</span>
-            <span class="text-2xl font-bold text-white">$15.000 <span class="text-xs font-normal text-gray-400">ARS</span></span>
+            <span class="bg-emerald-500/10 text-emerald-400 text-xs font-semibold px-2.5 py-1 rounded-full border border-emerald-500/20">Técnico</span>
+            <span class="text-xl font-bold text-white">$15.000 <span class="text-xs font-normal text-gray-400">ARS</span></span>
           </div>
-          <h3 class="text-xl font-bold text-white mb-2">Curso de Reparación de Línea Blanca</h3>
-          <p class="text-gray-400 text-sm mb-4">Diagnóstico de fallas, reparación de lavarropas, heladeras y electrodomésticos con guía de intervención técnica paso a paso.</p>
+          <h3 class="text-lg font-bold text-white mb-2">Reparación de Línea Blanca</h3>
+          <p class="text-gray-400 text-xs mb-4">Diagnóstico de fallas, reparación de lavarropas, heladeras y electrodomésticos.</p>
           <ul class="text-xs text-gray-300 space-y-2 mb-6">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Manual de Diagnóstico de Fallas</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Examen y Certificación Oficial</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Protocolos de Seguridad Técnica</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Materiales Drive</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Examen de 10 Preguntas</li>
           </ul>
         </div>
-        <div class="p-6 bg-gray-800/50 border-t border-gray-700/50">
-          <button onclick="simularPago('Curso de Reparación de Línea Blanca', 'https://drive.google.com/drive/folders/1htl8osu4monqyunIGDrtooYaNf8TGpbu?usp=sharing')" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3 px-4 rounded-lg transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/20">
-            <i class="fa-solid fa-cart-shopping"></i> Comprar e Iniciar ($15.000)
-          </button>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Area de Alumno / Examen (Oculta hasta pagar) -->
-    <div id="classroom-section" class="hidden bg-gray-800 border border-gray-700 rounded-2xl p-6 md:p-8 mb-12">
-      <div class="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-gray-700 pb-6 mb-6 gap-4">
-        <div>
-          <span class="text-xs text-green-400 font-semibold uppercase tracking-wider">Acceso Habilitado</span>
-          <h2 id="current-course-title" class="text-2xl font-bold text-white"></h2>
-        </div>
-        <div class="flex gap-3">
-          <a id="download-btn" href="#" target="_blank" class="bg-indigo-600 hover:bg-indigo-500 text-white font-medium py-2.5 px-4 rounded-lg text-sm flex items-center gap-2 transition-all shadow-md">
-            <i class="fa-solid fa-cloud-arrow-down text-white"></i> Acceder a Materiales (Google Drive)
+        <div class="p-5 bg-gray-800/50 border-t border-gray-700/50">
+          <a href="https://mercadopago.com.ar" target="_blank" onclick="iniciarFlujo('Curso de Reparación de Línea Blanca', 'https://drive.google.com/drive/folders/1htl8osu4monqyunIGDrtooYaNf8TGpbu?usp=sharing')" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
+            <i class="fa-solid fa-cart-shopping"></i> Comprar ($15.000)
           </a>
         </div>
       </div>
 
-      <!-- Formulario de Alumno y Examen -->
-      <div id="exam-container">
-        <h3 class="text-lg font-semibold text-white mb-4">Paso 1: Registrá tus datos para el Certificado</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-          <div>
-            <label class="block text-xs text-gray-400 mb-1">Nombre y Apellido Completo</label>
-            <input type="text" id="student-name" placeholder="Ej: Juan Pérez" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-indigo-500 text-sm">
+      <!-- Pack Completo -->
+      <div class="bg-gradient-to-b from-indigo-900/40 to-gray-800 rounded-xl border-2 border-indigo-500 overflow-hidden flex flex-col justify-between relative">
+        <div class="absolute top-0 right-0 bg-indigo-500 text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">¡Oferta 3x1!</div>
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <span class="bg-amber-500/10 text-amber-400 text-xs font-semibold px-2.5 py-1 rounded-full border border-amber-500/20">Pack Completo</span>
+            <span class="text-xl font-bold text-white">$35.000 <span class="text-xs font-normal text-gray-400">ARS</span></span>
           </div>
-          <div>
-            <label class="block text-xs text-gray-400 mb-1">Correo Electrónico</label>
-            <input type="email" id="student-email" placeholder="tu@email.com" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-indigo-500 text-sm">
+          <h3 class="text-lg font-bold text-white mb-2">Pack 3 Cursos Profesionales</h3>
+          <p class="text-gray-400 text-xs mb-4">Llevá los tres cursos completos con descuento y acceso total a todas las materias.</p>
+          <ul class="text-xs text-gray-300 space-y-2 mb-6">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Los 3 Accesos a Drive</li>
+            <li class="fa-solid fa-check text-amber-400 text-xs">Exámenes y Certificación Triple</li>
+          </ul>
+        </div>
+        <div class="p-5 bg-indigo-950/50 border-t border-indigo-500/30">
+          <a href="https://mercadopago.com.ar" target="_blank" onclick="iniciarFlujoPack('Pack Completo - 3 Cursos', ['https://drive.google.com/drive/folders/1wZ2I7XsNtCbplxqhyzNM39AHgoM86iCG?usp=sharing', 'https://drive.google.com/drive/folders/1iCwOfjGjEex8JD8Bmg7HssBzH5YkK-Pn?usp=sharing', 'https://drive.google.com/drive/folders/1htl8osu4monqyunIGDrtooYaNf8TGpbu?usp=sharing'])" class="w-full bg-amber-500 hover:bg-amber-400 text-gray-950 font-bold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
+            <i class="fa-solid fa-star"></i> Comprar Pack ($35.000)
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Panel de Alumno y Evaluación (10 Preguntas) -->
+    <div id="classroom-section" class="hidden bg-gray-800 border border-gray-700 rounded-2xl p-6 md:p-8 mb-12">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-gray-700 pb-6 mb-6 gap-4">
+        <div>
+          <span class="text-xs text-green-400 font-semibold uppercase tracking-wider">Simulación de Pago Exitosa - Panel de Examen</span>
+          <h2 id="current-course-title" class="text-2xl font-bold text-white"></h2>
+        </div>
+        <div id="download-area" class="hidden">
+          <div id="download-buttons-container" class="flex flex-wrap gap-2"></div>
+        </div>
+      </div>
+
+      <!-- Datos del Alumno -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 bg-gray-900/50 p-4 rounded-xl border border-gray-700">
+        <div>
+          <label class="block text-xs text-gray-400 mb-1">Nombre y Apellido (Para el Certificado)</label>
+          <input type="text" id="student-name" placeholder="Ej: María Gómez" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2 text-white text-sm focus:border-indigo-500">
+        </div>
+        <div>
+          <label class="block text-xs text-gray-400 mb-1">Correo Electrónico</label>
+          <input type="email" id="student-email" placeholder="tu@email.com" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2 text-white text-sm focus:border-indigo-500">
+        </div>
+      </div>
+
+      <!-- Examen de 10 Preguntas -->
+      <div id="exam-container" class="space-y-6">
+        <h3 class="text-lg font-semibold text-white border-b border-gray-700 pb-2">Evaluación Técnica Obligatoria (10 Preguntas - Mínimo 7 correctas)</h3>
+
+        <!-- P1 -->
+        <div class="bg-gray-900 p-4 rounded-lg border border-gray-700/50">
+          <p class="text-sm font-medium text-gray-200 mb-2">1. ¿Cuál es el primer paso financiero fundamental antes de fijar precios de venta?</p>
+          <div class="space-y-1.5 text-xs text-gray-300">
+            <label class="block"><input type="radio" name="p1" value="0"> Adivinar el precio de la competencia sin calcular costos.</label>
+            <label class="block"><input type="radio" name="p1" value="1"> Calcular costos fijos, variables y definir el punto de equilibrio real.</label>
+            <label class="block"><input type="radio" name="p1" value="0"> Vender al costo para ganar volumen de clientes.</label>
           </div>
         </div>
 
-        <h3 class="text-lg font-semibold text-white mb-4">Paso 2: Evaluación del Curso</h3>
-        <div class="space-y-4 mb-6">
-          <div class="bg-gray-900 p-4 rounded-lg border border-gray-700/50">
-            <p class="text-sm font-medium text-gray-200 mb-3">1. ¿Cuál es el concepto clave para una correcta gestión profesional según los contenidos?</p>
-            <div class="space-y-2 text-sm text-gray-300">
-              <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="0" class="text-indigo-600"> Trabajar sin planificación ni estructura operativa.</label>
-              <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="1" class="text-indigo-600"> Aplicar los protocolos técnicos y organizativos establecidos en el manual.</label>
-            </div>
-          </div>
-          <div class="bg-gray-900 p-4 rounded-lg border border-gray-700/50">
-            <p class="text-sm font-medium text-gray-200 mb-3">2. ¿A qué canal exclusivo se deben derivar las consultas y soporte técnico?</p>
-            <div class="space-y-2 text-sm text-gray-300">
-              <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="1" class="text-indigo-600"> urbanfacility.norte@gmail.com</label>
-              <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="0" class="text-indigo-600"> Redes sociales o mensajería instantánea.</label>
-            </div>
+        <!-- P2 -->
+        <div class="bg-gray-900 p-4 rounded-lg border border-gray-700/50">
+          <p class="text-sm font-medium text-gray-200 mb-2">2. ¿Cómo se debe gestionar administrativamente el dinero del negocio?</p>
+          <div class="space-y-1.5 text-xs text-gray-300">
+            <label class="block"><input type="radio" name="p2" value="0"> Mezclar los gastos personales con la caja diaria.</label>
+            <label class="block"><input type="radio" name="p2" value="1"> Separar 100% las finanzas comerciales de las personales.</label>
+            <label class="block"><input type="radio" name="p2" value="0"> Guardar el dinero en efectivo sin registros contables.</label>
           </div>
         </div>
 
-        <button onclick="evaluarExamen()" class="bg-green-600 hover:bg-green-500 text-white font-semibold py-3 px-6 rounded-lg text-sm transition-all flex items-center gap-2">
-          <i class="fa-solid fa-check-circle"></i> Enviar Examen y Generar Certificado
+        <!-- P3 -->
+        <div class="bg-gray-900 p-4 rounded-lg border border-gray-700/50">
+          <p class="text-sm font-medium text-gray-200 mb-2">3. Ante una consulta comercial por redes sociales, ¿cuál es la técnica de respuesta sugerida?</p>
+          <div class="space-y-1.5 text-xs text-gray-300">
+            <label class="block"><input type="radio" name="p3" value="1"> Validar la consulta, aportar valor y cerrar con una pregunta de opción doble.</label>
+            <label class="block"><input type="radio" name="p3" value="0"> Enviar el precio seco y dejar de responder.</label>
+            <label class="block"><input type="radio" name="p3" value="0"> Demorar 48 horas para generar interés.</label>
+          </div>
+        </div>
+
+        <!-- P4 -->
+        <div class="bg-gray-900 p-4 rounded-lg border border-gray-700/50">
+          <p class="text-sm font-medium text-gray-200 mb-2">4. ¿Cuál es el canal exclusivo de soporte técnico y contacto operativo oficial?</p>
+          <div class="space-y-1.5 text-xs text-gray-300">
+            <label class="block"><input type="radio" name="p4" value="0"> Grupos de WhatsApp o redes sociales.</label>
+            <label class="block"><input type="radio" name="p4" value="1"> urbanfacility.norte@gmail.com</label>
+            <label class="block"><input type="radio" name="p4" value="0"> Llamadas telefónicas directas a cualquier hora.</label>
+          </div>
+        </div>
+
+        <!-- P5 -->
+        <div class="bg-gray-900 p-4 rounded-lg border border-gray-700/50">
+          <p class="text-sm font-medium text-gray-200 mb-2">5. ¿Qué rol cumple la auditoría de redes y campañas publicitarias?</p>
+          <div class="space-y-1.5 text-xs text-gray-300">
+            <label class="block"><input type="radio" name="p5" value="0"> Publicar contenido sin medir resultados ni métricas.</label>
+            <label class="block"><input type="radio" name="p5" value="1"> Evaluar costos por adquisición, rendimiento y optimizar conversión.</label>
+            <label class="block"><input type="radio" name="p5" value="0"> Gastar presupuesto publicitario sin segmentar.</label>
+          </div>
+        </div>
+
+        <!-- P6 -->
+        <div class="bg-gray-900 p-4 rounded-lg border border-gray-700/50">
+          <p class="text-sm font-medium text-gray-200 mb-2">6. En la administración de consorcios, ¿qué documento es vital para la liquidación mensual?</p>
+          <div class="space-y-1.5 text-xs text-gray-300">
+            <label class="block"><input type="radio" name="p6" value="1"> Comprobantes de gastos, facturas de proveedores y fondo de reserva.</label>
+            <label class="block"><input type="radio" name="p6" value="0"> Notas informales de los vecinos sin respaldo legal.</label>
+            <label class="block"><input type="radio" name="p6" value="0"> Presupuestos estimativos de años anteriores.</label>
+          </div>
+        </div>
+
+        <!-- P7 -->
+        <div class="bg-gray-900 p-4 rounded-lg border border-gray-700/50">
+          <p class="text-sm font-medium text-gray-200 mb-2">7. ¿Cuál es la prioridad ante un reclamo urgente de mantenimiento en un edificio?</p>
+          <div class="space-y-1.5 text-xs text-gray-300">
+            <label class="block"><input type="radio" name="p7" value="0"> Ignorar el mensaje hasta la próxima asamblea ordinaria.</label>
+            <label class="block"><input type="radio" name="p7" value="1"> Aplicar el protocolo de emergencia y derivar al proveedor técnico autorizado.</label>
+            <label class="block"><input type="radio" name="p7" value="0"> Resolverlo personalmente sin normas de seguridad.</label>
+          </div>
+        </div>
+
+        <!-- P8 -->
+        <div class="bg-gray-900 p-4 rounded-lg border border-gray-700/50">
+          <p class="text-sm font-medium text-gray-200 mb-2">8. En la reparación de línea blanca, ¿cuál es la primera medida de seguridad eléctrica?</p>
+          <div class="space-y-1.5 text-xs text-gray-300">
+            <label class="block"><input type="radio" name="p8" value="1"> Desconectar el equipo de la red eléctrica y verificar ausencia de tensión.</label>
+            <label class="block"><input type="radio" name="p8" value="0"> Trabajar con el equipo enchufado para probar el funcionamiento directo.</label>
+            <label class="block"><input type="radio" name="p8" value="0"> Usar guantes comunes de tela sin cortar la térmica.</label>
+          </div>
+        </div>
+
+        <!-- P9 -->
+        <div class="bg-gray-900 p-4 rounded-lg border border-gray-700/50">
+          <p class="text-sm font-medium text-gray-200 mb-2">9. ¿Cómo se efectúa un diagnóstico técnico metódico de fallas?</p>
+          <div class="space-y-1.5 text-xs text-gray-300">
+            <label class="block"><input type="radio" name="p9" value="0"> Cambiar piezas al azar hasta que el equipo funcione.</label>
+            <label class="block"><input type="radio" name="p9" value="1"> Aislar componentes, medir continuidad y seguir los diagramas del manual.</label>
+            <label class="block"><input type="radio" name="p9" value="0"> Golpear el artefacto para destrabar partes mecánicas.</label>
+          </div>
+        </div>
+
+        <!-- P10 -->
+        <div class="bg-gray-900 p-4 rounded-lg border border-gray-700/50">
+          <p class="text-sm font-medium text-gray-200 mb-2">10. ¿Qué se certifica al aprobar esta evaluación en Urban Academy?</p>
+          <div class="space-y-1.5 text-xs text-gray-300">
+            <label class="block"><input type="radio" name="p10" value="0"> Una simple participación recreativa sin validez.</label>
+            <label class="block"><input type="radio" name="p10" value="1"> La adquisición de competencias prácticas y operativas bajo estándares profesionales.</label>
+            <label class="block"><input type="radio" name="p10" value="0"> Asistencia teórica sin prácticas de examen.</label>
+          </div>
+        </div>
+
+        <button onclick="calificarExamen()" class="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-3 px-6 rounded-lg text-sm transition-all shadow-lg flex items-center justify-center gap-2">
+          <i class="fa-solid fa-check-circle"></i> Enviar Examen y Evaluar Resultados
         </button>
       </div>
     </div>
 
-    <!-- Modal / Certificado Imprimible -->
+    <!-- Modal Certificado -->
     <div id="certificate-modal" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center p-4 z-50">
       <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 max-w-4xl w-full max-h-[90vh] overflow-y-auto">
         <div class="flex justify-between items-center mb-6 no-print">
-          <h3 class="text-lg font-bold text-white">¡Aprobado! Tu Certificado Oficial</h3>
+          <h3 class="text-lg font-bold text-white">¡Examen Aprobado con Éxito! Certificado Oficial</h3>
           <div class="flex gap-2">
             <button onclick="window.print()" class="bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold px-4 py-2 rounded-lg flex items-center gap-2">
-              <i class="fa-solid fa-print"></i> Imprimir / Guardar en PDF
+              <i class="fa-solid fa-print"></i> Imprimir / Guardar PDF
             </button>
             <button onclick="cerrarCertificado()" class="bg-gray-700 hover:bg-gray-600 text-gray-300 text-xs font-semibold px-4 py-2 rounded-lg">Cerrar</button>
           </div>
         </div>
 
-        <!-- Plantilla Visual de Certificado -->
+        <!-- Plantilla Certificado Impresión -->
         <div id="printable-certificate" class="bg-white text-gray-900 p-8 md:p-12 rounded-xl border-8 border-double border-indigo-900 text-center relative shadow-2xl">
           <div class="border-2 border-indigo-600 p-6 md:p-8">
             <h1 class="text-3xl font-serif font-bold text-indigo-950 mb-1">URBAN ACADEMY</h1>
@@ -195,7 +296,7 @@
               </div>
               <div>
                 <p id="cert-date" class="font-medium"></p>
-                <p>Soporte: urbanfacility.norte@gmail.com</p>
+                <p>Contacto: urbanfacility.norte@gmail.com</p>
               </div>
             </div>
           </div>
@@ -212,25 +313,70 @@
 
   <script>
     let cursoActual = '';
+    let linksDriveActuales = [];
 
-    function simularPago(titulo, driveLink) {
-      alert("Procesando pago de $15.000 ARS...\nRedirigiendo automáticamente a la plataforma de alumno.");
+    function iniciarFlujo(titulo, driveLink) {
       cursoActual = titulo;
+      linksDriveActuales = [driveLink];
       document.getElementById('current-course-title').innerText = titulo;
-      document.getElementById('download-btn').href = driveLink;
       document.getElementById('classroom-section').classList.remove('hidden');
       document.getElementById('classroom-section').scrollIntoView({ behavior: 'smooth' });
     }
 
-    function evaluarExamen() {
-      const nombre = document.getElementById('student-name').value;
-      const email = document.getElementById('student-email').value;
+    function iniciarFlujoPack(titulo, driveLinks) {
+      cursoActual = titulo;
+      linksDriveActuales = driveLinks;
+      document.getElementById('current-course-title').innerText = titulo;
+      document.getElementById('classroom-section').classList.remove('hidden');
+      document.getElementById('classroom-section').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function calificarExamen() {
+      const nombre = document.getElementById('student-name').value.trim();
+      const email = document.getElementById('student-email').value.trim();
 
       if (!nombre || !email) {
-        alert("Por favor completá tu nombre y correo para emitir el certificado.");
+        alert("Por favor completá tu nombre y correo electrónico antes de enviar el examen.");
         return;
       }
 
+      // Evaluar las 10 preguntas
+      let puntaje = 0;
+      for (let i = 1; i <= 10; i++) {
+        const op = document.querySelector(`input[name="p${i}"]:checked`);
+        if (op && op.value === "1") {
+          puntaje++;
+        }
+      }
+
+      if (puntaje < 7) {
+        alert(`Obtuviste ${puntaje}/10 respuestas correctas. Se requieren al menos 7 aciertos para aprobar. ¡Revisá los conceptos y volvé a intentarlo!`);
+        return;
+      }
+
+      // ¡Aprobado! Habilitar botones de Google Drive y mostrar certificado
+      alert(`¡Felicitaciones! Aprobaste el examen con ${puntaje}/10. Ya podés descargar tus materiales de Google Drive y emitir tu certificado oficial.`);
+      
+      const container = document.getElementById('download-buttons-container');
+      container.innerHTML = '';
+      
+      if (linksDriveActuales.length === 1) {
+        container.innerHTML = `
+          <a href="${linksDriveActuales[0]}" target="_blank" class="bg-indigo-600 hover:bg-indigo-500 text-white font-medium py-2.5 px-4 rounded-lg text-xs flex items-center gap-2 shadow-md">
+            <i class="fa-solid fa-cloud-arrow-down"></i> Descargar Materiales (Google Drive)
+          </a>
+        `;
+      } else {
+        container.innerHTML = `
+          <a href="${linksDriveActuales[0]}" target="_blank" class="bg-indigo-600 hover:bg-indigo-500 text-white font-medium py-2 px-3 rounded-lg text-xs flex items-center gap-2 shadow-md">1. Marketing</a>
+          <a href="${linksDriveActuales[1]}" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white font-medium py-2 px-3 rounded-lg text-xs flex items-center gap-2 shadow-md">2. Consorcios</a>
+          <a href="${linksDriveActuales[2]}" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-medium py-2 px-3 rounded-lg text-xs flex items-center gap-2 shadow-md">3. Línea Blanca</a>
+        `;
+      }
+
+      document.getElementById('download-area').classList.remove('hidden');
+
+      // Preparar Certificado
       document.getElementById('cert-student-name').innerText = nombre;
       document.getElementById('cert-course-name').innerText = cursoActual;
       document.getElementById('cert-date').innerText = "Fecha: " + new Date().toLocaleDateString('es-AR');

@@ -40,13 +40,13 @@
     <!-- Hero / Intro -->
     <div class="text-center mb-12">
       <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-3">Plataforma de Capacitación Profesional</h2>
-      <p class="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">Seleccioná tu formación, realizá el pago, aprobá la evaluación técnica de 10 preguntas y obtené tu certificación junto al acceso directo a Google Drive.</p>
+      <p class="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">Realizá el pago, desbloqueá tu material de Google Drive, estudiá y rendí el examen de 10 preguntas para obtener tu certificación oficial.</p>
     </div>
 
     <!-- Grid de Cursos -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
       
-      <!-- Curso 1 -->
+      <!-- Curso 1: Marketing -->
       <div class="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden flex flex-col justify-between">
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
@@ -56,18 +56,27 @@
           <h3 class="text-lg font-bold text-white mb-2">Curso de Marketing Inicial</h3>
           <p class="text-gray-400 text-xs mb-4">Finanzas, costos, estructura de precios reales, auditoría de redes y campañas.</p>
           <ul class="text-xs text-gray-300 space-y-2 mb-6">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Materiales Drive</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Examen de 10 Preguntas</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Materiales en Google Drive</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Examen Técnico de 10 Preguntas</li>
           </ul>
         </div>
-        <div class="p-5 bg-gray-800/50 border-t border-gray-700/50">
-          <button onclick="iniciarFlujo('Curso de Marketing Inicial para Principiantes', 'https://drive.google.com/drive/folders/1wZ2I7XsNtCbplxqhyzNM39AHgoM86iCG?usp=sharing')" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
-            <i class="fa-solid fa-cart-shopping"></i> Comprar ($15.000)
+        <div class="p-5 bg-gray-800/50 border-t border-gray-700/50 space-y-3">
+          <!-- Botón de Pago -->
+          <a href="https://mercadopago.com.ar" target="_blank" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
+            <i class="fa-solid fa-cart-shopping"></i> Pagar Curso ($15.000)
+          </a>
+          <!-- Botón Drive Bloqueado con Candado -->
+          <button disabled class="w-full bg-gray-700 text-gray-400 font-semibold py-2.5 px-3 rounded-lg text-xs flex items-center justify-center gap-2 cursor-not-allowed border border-gray-600" id="btn-drive-1">
+            <i class="fa-solid fa-lock text-amber-400"></i> Drive Bloqueado (Completar Pago)
+          </button>
+          <!-- Botón de Examen -->
+          <button onclick="abrirExamen('Curso de Marketing Inicial para Principiantes', ['https://drive.google.com/drive/folders/1wZ2I7XsNtCbplxqhyzNM39AHgoM86iCG?usp=sharing'])" class="w-full bg-gray-700 hover:bg-gray-600 text-indigo-300 font-semibold py-2 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 border border-indigo-500/30">
+            <i class="fa-solid fa-file-pen"></i> Ir al Examen (Tras Estudiar)
           </button>
         </div>
       </div>
 
-      <!-- Curso 2 -->
+      <!-- Curso 2: Consorcios -->
       <div class="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden flex flex-col justify-between">
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
@@ -77,18 +86,24 @@
           <h3 class="text-lg font-bold text-white mb-2">Administración de Consorcios</h3>
           <p class="text-gray-400 text-xs mb-4">Gestión legal, liquidación de expensas y control financiero operativo.</p>
           <ul class="text-xs text-gray-300 space-y-2 mb-6">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Materiales Drive</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Examen de 10 Preguntas</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Materiales en Google Drive</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Examen Técnico de 10 Preguntas</li>
           </ul>
         </div>
-        <div class="p-5 bg-gray-800/50 border-t border-gray-700/50">
-          <button onclick="iniciarFlujo('Curso de Administración de Consorcios', 'https://drive.google.com/drive/folders/1iCwOfjGjEex8JD8Bmg7HssBzH5YkK-Pn?usp=sharing')" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
-            <i class="fa-solid fa-cart-shopping"></i> Comprar ($15.000)
+        <div class="p-5 bg-gray-800/50 border-t border-gray-700/50 space-y-3">
+          <a href="https://mercadopago.com.ar" target="_blank" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
+            <i class="fa-solid fa-cart-shopping"></i> Pagar Curso ($15.000)
+          </a>
+          <button disabled class="w-full bg-gray-700 text-gray-400 font-semibold py-2.5 px-3 rounded-lg text-xs flex items-center justify-center gap-2 cursor-not-allowed border border-gray-600" id="btn-drive-2">
+            <i class="fa-solid fa-lock text-amber-400"></i> Drive Bloqueado (Completar Pago)
+          </button>
+          <button onclick="abrirExamen('Curso de Administración de Consorcios', ['https://drive.google.com/drive/folders/1iCwOfjGjEex8JD8Bmg7HssBzH5YkK-Pn?usp=sharing'])" class="w-full bg-gray-700 hover:bg-gray-600 text-blue-300 font-semibold py-2 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 border border-blue-500/30">
+            <i class="fa-solid fa-file-pen"></i> Ir al Examen (Tras Estudiar)
           </button>
         </div>
       </div>
 
-      <!-- Curso 3 -->
+      <!-- Curso 3: Línea Blanca -->
       <div class="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden flex flex-col justify-between">
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
@@ -98,13 +113,19 @@
           <h3 class="text-lg font-bold text-white mb-2">Reparación de Línea Blanca</h3>
           <p class="text-gray-400 text-xs mb-4">Diagnóstico de fallas, reparación de lavarropas, heladeras y electrodomésticos.</p>
           <ul class="text-xs text-gray-300 space-y-2 mb-6">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Materiales Drive</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Examen de 10 Preguntas</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Materiales en Google Drive</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Examen Técnico de 10 Preguntas</li>
           </ul>
         </div>
-        <div class="p-5 bg-gray-800/50 border-t border-gray-700/50">
-          <button onclick="iniciarFlujo('Curso de Reparación de Línea Blanca', 'https://drive.google.com/drive/folders/1htl8osu4monqyunIGDrtooYaNf8TGpbu?usp=sharing')" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
-            <i class="fa-solid fa-cart-shopping"></i> Comprar ($15.000)
+        <div class="p-5 bg-gray-800/50 border-t border-gray-700/50 space-y-3">
+          <a href="https://mercadopago.com.ar" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
+            <i class="fa-solid fa-cart-shopping"></i> Pagar Curso ($15.000)
+          </a>
+          <button disabled class="w-full bg-gray-700 text-gray-400 font-semibold py-2.5 px-3 rounded-lg text-xs flex items-center justify-center gap-2 cursor-not-allowed border border-gray-600" id="btn-drive-3">
+            <i class="fa-solid fa-lock text-amber-400"></i> Drive Bloqueado (Completar Pago)
+          </button>
+          <button onclick="abrirExamen('Curso de Reparación de Línea Blanca', ['https://drive.google.com/drive/folders/1htl8osu4monqyunIGDrtooYaNf8TGpbu?usp=sharing'])" class="w-full bg-gray-700 hover:bg-gray-600 text-emerald-300 font-semibold py-2 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 border border-emerald-500/30">
+            <i class="fa-solid fa-file-pen"></i> Ir al Examen (Tras Estudiar)
           </button>
         </div>
       </div>
@@ -121,30 +142,29 @@
           <p class="text-gray-400 text-xs mb-4">Llevá los tres cursos completos con descuento y acceso total a todas las materias.</p>
           <ul class="text-xs text-gray-300 space-y-2 mb-6">
             <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Los 3 Accesos a Drive</li>
-            <li class="fa-solid fa-check text-amber-400 text-xs">Exámenes y Certificación Triple</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Exámenes y Certificación Triple</li>
           </ul>
         </div>
-        <div class="p-5 bg-indigo-950/50 border-t border-indigo-500/30">
-          <button onclick="iniciarFlujoPack('Pack Completo - 3 Cursos', ['https://drive.google.com/drive/folders/1wZ2I7XsNtCbplxqhyzNM39AHgoM86iCG?usp=sharing', 'https://drive.google.com/drive/folders/1iCwOfjGjEex8JD8Bmg7HssBzH5YkK-Pn?usp=sharing', 'https://drive.google.com/drive/folders/1htl8osu4monqyunIGDrtooYaNf8TGpbu?usp=sharing'])" class="w-full bg-amber-500 hover:bg-amber-400 text-gray-950 font-bold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
-            <i class="fa-solid fa-star"></i> Comprar Pack ($35.000)
+        <div class="p-5 bg-indigo-950/50 border-t border-indigo-500/30 space-y-3">
+          <a href="https://mercadopago.com.ar" target="_blank" class="w-full bg-amber-500 hover:bg-amber-400 text-gray-950 font-bold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg">
+            <i class="fa-solid fa-star"></i> Pagar Pack ($35.000)
+          </a>
+          <button disabled class="w-full bg-gray-700 text-gray-400 font-semibold py-2.5 px-3 rounded-lg text-xs flex items-center justify-center gap-2 cursor-not-allowed border border-gray-600" id="btn-drive-pack">
+            <i class="fa-solid fa-lock text-amber-400"></i> Drives Bloqueados (Completar Pago)
+          </button>
+          <button onclick="abrirExamen('Pack Completo - 3 Cursos', ['https://drive.google.com/drive/folders/1wZ2I7XsNtCbplxqhyzNM39AHgoM86iCG?usp=sharing', 'https://drive.google.com/drive/folders/1iCwOfjGjEex8JD8Bmg7HssBzH5YkK-Pn?usp=sharing', 'https://drive.google.com/drive/folders/1htl8osu4monqyunIGDrtooYaNf8TGpbu?usp=sharing'])" class="w-full bg-gray-700 hover:bg-gray-600 text-amber-300 font-semibold py-2 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 border border-amber-500/30">
+            <i class="fa-solid fa-file-pen"></i> Ir a Exámenes (Tras Estudiar)
           </button>
         </div>
       </div>
 
     </div>
 
-    <!-- Panel de Alumno y Evaluación (10 Preguntas) -->
+    <!-- Panel de Examen (Oculto hasta hacer clic en Ir al Examen) -->
     <div id="classroom-section" class="hidden bg-gray-800 border border-gray-700 rounded-2xl p-6 md:p-8 mb-12">
-      <div class="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-gray-700 pb-6 mb-6 gap-4">
-        <div>
-          <span class="text-xs text-green-400 font-semibold uppercase tracking-wider">Acceso Habilitado - Panel de Examen</span>
-          <h2 id="current-course-title" class="text-2xl font-bold text-white"></h2>
-        </div>
-        
-        <!-- Contenedor del Botón / Botones de Drive (Aparece tras aprobar) -->
-        <div id="download-area" class="hidden flex flex-wrap gap-2">
-          <div id="download-buttons-container" class="flex flex-wrap gap-2"></div>
-        </div>
+      <div class="border-b border-gray-700 pb-4 mb-6">
+        <span class="text-xs text-green-400 font-semibold uppercase tracking-wider">Panel de Evaluación Técnica</span>
+        <h2 id="current-course-title" class="text-2xl font-bold text-white"></h2>
       </div>
 
       <!-- Datos del Alumno -->
@@ -161,7 +181,7 @@
 
       <!-- Examen de 10 Preguntas -->
       <div id="exam-container" class="space-y-6">
-        <h3 class="text-lg font-semibold text-white border-b border-gray-700 pb-2">Evaluación Técnica Obligatoria (10 Preguntas - Mínimo 7 correctas)</h3>
+        <h3 class="text-lg font-semibold text-white border-b border-gray-700 pb-2">Evaluación Obligatoria (10 Preguntas - Mínimo 7 correctas)</h3>
 
         <!-- P1 -->
         <div class="bg-gray-900 p-4 rounded-lg border border-gray-700/50">
@@ -264,7 +284,7 @@
         </div>
 
         <button onclick="calificarExamen()" class="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-3 px-6 rounded-lg text-sm transition-all shadow-lg flex items-center justify-center gap-2">
-          <i class="fa-solid fa-check-circle"></i> Enviar Examen y Obtener Materiales y Certificado
+          <i class="fa-solid fa-check-circle"></i> Enviar Examen y Obtener Certificado Oficial
         </button>
       </div>
     </div>
@@ -317,17 +337,41 @@
     let cursoActual = '';
     let linksDriveActuales = [];
 
-    function iniciarFlujo(titulo, driveLink) {
-      cursoActual = titulo;
-      linksDriveActuales = [driveLink];
-      document.getElementById('current-course-title').innerText = titulo;
-      document.getElementById('classroom-section').classList.remove('hidden');
-      document.getElementById('classroom-section').scrollIntoView({ behavior: 'smooth' });
+    // Al recargar o volver desde Mercado Pago con éxito, simulamos/detectamos el pago aprobado
+    // O podés usar este botón auxiliar para testear el desbloqueo del Drive con candado:
+    // (Ej: Si querés probar cómo se destraba el candado al volver del pago, ejecutá simularPagoExitoso() en consola o agregalo a un botón de prueba).
+    function desbloquearDrive(idBtnDrive, links) {
+      const btn = document.getElementById(idBtnDrive);
+      btn.disabled = false;
+      btn.className = "w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2.5 px-3 rounded-lg text-xs transition-all flex items-center justify-center gap-2 shadow-lg";
+      
+      if (links.length === 1) {
+        btn.innerHTML = `<i class="fa-solid fa-cloud-arrow-down"></i> Acceder a Materiales (Drive)`;
+        btn.onclick = function() { window.open(links[0], '_blank'); };
+      } else {
+        // Si es el pack, abrimos el primer link o generamos opciones
+        btn.innerHTML = `<i class="fa-solid fa-cloud-arrow-down"></i> Acceder a los 3 Drives`;
+        btn.onclick = function() {
+          links.forEach(l => window.open(l, '_blank'));
+        };
+      }
+      alert("¡Pago acreditado con éxito! Se ha desbloqueado el acceso a tu material en Google Drive.");
     }
 
-    function iniciarFlujoPack(titulo, driveLinks) {
+    // Nota: Para simular el desbloqueo instantáneo de prueba ahora mismo en la web, podés hacer clic en cualquiera de los botones de pago o configurar el retorno de Mercado Pago a https://aps2027.github.io/URBAN/?pago=ok
+    window.onload = function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('pago') === 'ok' || window.location.href.includes('ok')) {
+        desbloquearDrive('btn-drive-1', ['https://drive.google.com/drive/folders/1wZ2I7XsNtCbplxqhyzNM39AHgoM86iCG?usp=sharing']);
+        desbloquearDrive('btn-drive-2', ['https://drive.google.com/drive/folders/1iCwOfjGjEex8JD8Bmg7HssBzH5YkK-Pn?usp=sharing']);
+        desbloquearDrive('btn-drive-3', ['https://drive.google.com/drive/folders/1htl8osu4monqyunIGDrtooYaNf8TGpbu?usp=sharing']);
+        desbloquearDrive('btn-drive-pack', ['https://drive.google.com/drive/folders/1wZ2I7XsNtCbplxqhyzNM39AHgoM86iCG?usp=sharing', 'https://drive.google.com/drive/folders/1iCwOfjGjEex8JD8Bmg7HssBzH5YkK-Pn?usp=sharing', 'https://drive.google.com/drive/folders/1htl8osu4monqyunIGDrtooYaNf8TGpbu?usp=sharing']);
+      }
+    };
+
+    function abrirExamen(titulo, links) {
       cursoActual = titulo;
-      linksDriveActuales = driveLinks;
+      linksDriveActuales = links;
       document.getElementById('current-course-title').innerText = titulo;
       document.getElementById('classroom-section').classList.remove('hidden');
       document.getElementById('classroom-section').scrollIntoView({ behavior: 'smooth' });
@@ -342,7 +386,6 @@
         return;
       }
 
-      // Evaluar las 10 preguntas
       let puntaje = 0;
       for (let i = 1; i <= 10; i++) {
         const op = document.querySelector(`input[name="p${i}"]:checked`);
@@ -352,33 +395,12 @@
       }
 
       if (puntaje < 7) {
-        alert(`Obtuviste ${puntaje}/10 respuestas correctas. Se requieren al menos 7 aciertos para aprobar. ¡Revisá los conceptos y volvé a intentarlo!`);
+        alert(`Obtuviste ${puntaje}/10 respuestas correctas. Se requieren al menos 7 aciertos para aprobar. ¡Revisá tu material de Drive y volvé a intentarlo!`);
         return;
       }
 
-      // ¡Aprobado! Habilitar botones de Google Drive y mostrar certificado
-      alert(`¡Felicitaciones! Aprobaste el examen con ${puntaje}/10. Tus accesos a Google Drive y tu certificado oficial ya están habilitados.`);
+      alert(`¡Felicitaciones! Aprobaste el examen con ${puntaje}/10. Tu certificado oficial ya está disponible.`);
       
-      const container = document.getElementById('download-buttons-container');
-      container.innerHTML = '';
-      
-      if (linksDriveActuales.length === 1) {
-        container.innerHTML = `
-          <a href="${linksDriveActuales[0]}" target="_blank" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2 px-4 rounded-lg text-xs flex items-center gap-2 shadow-md">
-            <i class="fa-solid fa-cloud-arrow-down"></i> Acceder a Materiales (Google Drive)
-          </a>
-        `;
-      } else {
-        container.innerHTML = `
-          <a href="${linksDriveActuales[0]}" target="_blank" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2 px-3 rounded-lg text-xs flex items-center gap-2 shadow-md"><i class="fa-solid fa-cloud-arrow-down"></i> 1. Marketing</a>
-          <a href="${linksDriveActuales[1]}" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-3 rounded-lg text-xs flex items-center gap-2 shadow-md"><i class="fa-solid fa-cloud-arrow-down"></i> 2. Consorcios</a>
-          <a href="${linksDriveActuales[2]}" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-2 px-3 rounded-lg text-xs flex items-center gap-2 shadow-md"><i class="fa-solid fa-cloud-arrow-down"></i> 3. Línea Blanca</a>
-        `;
-      }
-
-      document.getElementById('download-area').classList.remove('hidden');
-
-      // Preparar Certificado
       document.getElementById('cert-student-name').innerText = nombre;
       document.getElementById('cert-course-name').innerText = cursoActual;
       document.getElementById('cert-date').innerText = "Fecha: " + new Date().toLocaleDateString('es-AR');
